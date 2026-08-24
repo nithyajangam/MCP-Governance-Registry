@@ -1,0 +1,21 @@
+# Project TODO
+
+- [x] Define a tenant-aware MCP governance architecture and reference endpoint contract.
+- [x] Model tenants, registered servers, tools, policy decisions, approval requests, and append-only audit events in the database.
+- [x] Build secured backend procedures for registry discovery, tenant management, approval decisions, and audit exploration.
+- [x] Add demonstrative Streamable HTTP-style JSON-RPC MCP reference endpoints with a limited safe tool surface and capability metadata.
+- [x] Enforce tenant scopes and OPA-compatible allow/deny decisions before every reference tool execution.
+- [x] Separate destructive reference actions behind a time-limited human-approval workflow with approval and rejection expiry handling.
+- [x] Persist redacted immutable audit records for requests, policy checks, approval events, and tool outcomes.
+- [x] Add explicit administration procedures for tenant status and registry validation or enable-disable actions.
+- [x] Add a tamper-evident audit-chain verification routine for the database engine used by this project.
+- [x] Build an elegant, responsive governance dashboard for overview, registry, tenants, approvals, audit activity, and policy outcomes.
+- [x] Add safe deterministic seed data for a complete in-app reference workflow without fabricated reviews or testimonials.
+- [x] Add conformance and load-test scaffolding with practical instructions for running both suites.
+- [x] Write an Antigravity-focused setup, deployment, security, and extension guide.
+- [x] Add and run Vitest coverage for policy, approval, MCP endpoint, and data workflow behavior.
+- [x] Verify the user interface on desktop and mobile, confirm type-checks/tests, and create a final project checkpoint.
+- [x] Replace platform-specific dashboard authentication with a portable Render-ready operator access flow.
+- [x] Add TLS-aware TiDB Cloud database configuration and Render environment validation.
+- [x] Update the beginner deployment guide with the final Render and TiDB Cloud steps.
+- [x] Verify the Render-ready build and save a new deployment checkpoint.

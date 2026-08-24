@@ -14,7 +14,8 @@ if (process.env.TIDB_ENABLE_SSL === "true") {
       port: Number(parsed.port || 4000),
       user: decodeURIComponent(parsed.username),
       password: decodeURIComponent(parsed.password),
-      database: decodeURIComponent(parsed.pathname.replace(/^\\//, "") || "test"),
+      database: decodeURIComponent(parsed.pathname.slice(1) || "test"),
+
       ssl: { minVersion: "TLSv1.2" },
       enableKeepAlive: true,
     },

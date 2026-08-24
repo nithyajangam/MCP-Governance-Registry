@@ -1,5 +1,5 @@
 import { migrate } from "drizzle-orm/mysql2/migrator";
-import { getDb } from "../server/db";
+import { getDb } from "../server/db.js";
 
 const db = await getDb();
 if (!db) {
